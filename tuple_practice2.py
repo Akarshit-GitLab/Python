@@ -9,4 +9,5 @@ if(list1 == list_reverse):
 else:
     print("this is not")
 
+
     # we can use copy() method also
