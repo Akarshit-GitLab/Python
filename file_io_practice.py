@@ -6,10 +6,22 @@
 
 
 # now replace all occurance of java in python 
+# with open("practice.txt","r") as f:
+#     data = f.read()
+# new_data = data.replace("java","python")
+
+# print(new_data)
+# with open("practice.txt","w") as f:
+#     f.write(new_data)
+#     f.close()
+
+# waf search if the word learning exist or not 
+word = "learning"
 with open("practice.txt","r") as f:
     data = f.read()
-new_data = data.replace("java","python")
+    if(data.find(word) != -1):
+        print("found")
+    else:
+        print("not found")
 
-print(new_data)
-with open("practice.txt","w") as f:
-    f.write(new_data)
+
