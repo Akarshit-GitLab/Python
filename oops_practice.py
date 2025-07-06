@@ -13,6 +13,3 @@ class student:
 
 s1 =student("akarshit",[94,95,99])
 s1.get_avg()
-
-
-
