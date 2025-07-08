@@ -6,4 +6,6 @@ with open("practice.txt" ,"r") as f:
     for val in nums:
         if(int(val) %2 == 0):
             count += 1
+
+            
 print(count)
