@@ -16,6 +16,7 @@
 #     f.close()
 
 # waf search if the word learning exist or not 
+
 word = "learning"
 with open("practice.txt","r") as f:
     data = f.read()
