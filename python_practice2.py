@@ -19,3 +19,4 @@ def fibonacci(n):
         a, b = b, a + b
 
 fibonacci(10)
+
