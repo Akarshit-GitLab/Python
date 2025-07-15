@@ -10,6 +10,7 @@ if vowels.issubset(set(text)):
     print("All vowels are present")
 else:
     print("Not all vowels")
+    
 
 # 6. Find all even numbers between 1 and 100
 evens = [x for x in range(1, 101) if x % 2 == 0]
