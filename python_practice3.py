@@ -13,6 +13,7 @@ class Person:
 p = Person("Alice")
 p.greet()
 
+
 # 10. Handle division by zero
 try:
     x = 5 / 0
