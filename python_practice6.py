@@ -16,3 +16,4 @@ def counter():
 c = counter()
 for _ in range(5):
     print(next(c))
+    
