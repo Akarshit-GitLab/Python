@@ -7,6 +7,7 @@ def factorial(n):
 print(factorial(5))
 
 # 8. Create a simple counter using a generator
+
 def counter():
     n = 0
     while True:
