@@ -5,6 +5,7 @@ print(a, b)
 
 
 # 2. Find the largest number in a list
+
 lst = [4, 7, 1, 9, 12, 3]
 print(max(lst))
 
