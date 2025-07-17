@@ -1,22 +1,17 @@
-# 5. Count frequency of each character in a string
-text = "banana"
-freq = {}
-for char in text:
-    freq[char] = freq.get(char, 0) + 1
-print(freq)
+def missingCharacters(s):
+    digits = set("0123456789")
+    letters = set("abcdefghijklmnopqrstuvwxyz")
 
-# 6. Write & read from a file
-with open("example.txt", "w") as f:
-    f.write("Hello Python!\nSecond line.")
-with open("example.txt", "r") as f:
-    print(f.read())
+    present_digits = set(filter(str.isdigit, s))
+    present_letters = set(filter(str.isalpha, s))
 
-# 7. Fibonacci sequence up to n terms
-def fibonacci(n):
-    a, b = 0, 1
-    for _ in range(n):
-        print(a, end=" ")
-        a, b = b, a + b
+    missing_digits = sorted(digits - present_digits)
+    missing_letters = sorted(letters - present_letters)
 
-fibonacci(10)
+    return ''.join(missing_digits + missing_letters)
 
+
+# Optional for local testing
+if __name__ == '__main__':
+    s = input("Enter the string: ")
+    print("Missing characters:", missingCharacters(s))
