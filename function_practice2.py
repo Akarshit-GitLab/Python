@@ -11,6 +11,7 @@ n = int(input("enter the number : "))
 factorial(n)
 
 # waf to convert usd to inr
+
 def convert(us):
     us = 83* us
     # print(usd)
