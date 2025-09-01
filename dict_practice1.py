@@ -19,4 +19,3 @@ subject = {
 }
 print(len(list(subject)))
 
-
